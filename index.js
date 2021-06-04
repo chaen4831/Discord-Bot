@@ -11,7 +11,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
-// Retrieves the prefix and token provided in the config file (must be named 'config.json' and in the same folder)
+// Retrieves the prefix and token provided in the config file (the current token is for the bot used to test the code, but should be changed)
 const { prefix, token } = require('./config.json');
 
 client.once('ready', () => {
