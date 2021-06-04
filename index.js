@@ -11,7 +11,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
-// Retrieves the prefix and token provided in the config file
+// Retrieves the prefix and token provided in the config file (must be named 'config.json' and in the same folder)
 const { prefix, token } = require('./config.json');
 
 client.once('ready', () => {
